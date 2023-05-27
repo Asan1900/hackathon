@@ -1,0 +1,16 @@
+# .gitlab-ci.yml
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - mvn clean package
+    # Другие команды сборки
+
+test:
+  stage: test
+  script:
+    - mvn test
+    # хз другие команды тестирования
